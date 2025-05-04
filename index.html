@@ -24,7 +24,7 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="Screen Shot 2025-01-13 at 2.49.02 PM.png" alt="Image" width="1500" height="800">
+  <img class="w3-image" src="/Users/hamzah/Desktop/Screen Shot 2025-01-13 at 2.49.02 PM.png" alt="Image" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ELO</b></span> <span class="w3-hide-small w3-text-light-grey">2025</span></h1>
   </div>
@@ -54,7 +54,7 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
         <div class="w3-display-topleft w3-black w3-padding">Bahja Initiative</div>
-        <a href="https://www.facebook.com/Bahja.Jor/"><img src="center3.jpeg" alt="1" style="width:100%"></a>
+        <a href="https://www.facebook.com/Bahja.Jor/"><img src="/center3.jpeg" alt="1" style="width:100%"></a>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
@@ -152,19 +152,25 @@
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>If you want to know more about us and our goals, contact us here!</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+  <p>If you want to know more about us and our goals, contact us here!</p>
+
+  <div style="display: flex; align-items: flex-start; gap: 40px;">
+    <!-- Contact Form -->
+    <form action="/action_page.php" target="_blank" style="flex: 1;">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" style="width: 70%; font-size: 14px; padding: 6px;">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email" style="width: 70%; font-size: 14px; padding: 6px;">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject" style="width: 70%; font-size: 14px; padding: 6px;">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment" style="width: 70%; font-size: 14px; padding: 6px;">
       <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form>
+
+    <!-- QR Code Image -->
+    <img src="qrcode.png" alt="QR Code" style="width: 150px; height: auto;">
   </div>
-<!-- Image of location/map -->
+</div>
 
 
 <!-- End page content -->
